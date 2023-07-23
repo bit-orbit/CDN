@@ -1,0 +1,25 @@
+import sqlite3
+
+db1_path = input('enter db1 path: ')
+db2_path = input('enter db2 path: ')
+
+db1 = sqlite3.connect(db1_path)
+db2 = sqlite3.connect(db2_path)
+
+rows = db1.execute('SELECT * FROM client_traffics')
+counter = len(list(db2.execute('SELECT * FROM client_traffics'))) + 100
+
+# i choose id more than 100, this is due to that some record my are removed and the id is more than its length.
+
+print(counter)
+
+count = 1
+for row in rows:
+    print(f"[{count}] {row} => ", end='')
+    counter += 1
+    _row = list(row)
+    _row[0] = counter
+    print(_row)
+    db2.execute(f'INSERT INTO client_traffics (id, inbound_id, enable, email, up, down, expiry_time, total) VALUES {tuple(_row)}')
+    db2.commit()
+    count += 1
