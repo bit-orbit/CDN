@@ -2,17 +2,17 @@
   "questions": [
     "descriptive": [
       "what is your name?",
-      "what is your Dog name?",
+      "what is your Dog name?"
     ],
-    choice: [
+    "choice": [
       {
         "question": "which is your fave number?",
-        answares: [1, 2, 3],
+        "answears": [1, 2, 3]
       },
       {
         "question": "which is your fav color?",
-        answares: ["red", "green", "blud"],
-      },
-    ],
+        "answears": ["red", "green", "blud"]
+      }
+    ]
   ]
 }
