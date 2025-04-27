@@ -1,18 +1,28 @@
 {
-  "questions": [
-    "descriptive": [
-      "what is your name?",
-      "what is your Dog name?"
-    ],
-    "choice": [
-      {
-        "question": "which is your fave number?",
-        "answears": [1, 2, 3]
-      },
-      {
-        "question": "which is your fav color?",
-        "answears": ["red", "green", "blud"]
-      }
+    "questions": [
+        {
+            "descriptive": [
+                "what is your name?",
+                "what is your Dog name?"
+            ],
+            "choice": [
+                {
+                    "question": "which is your fave number?",
+                    "answears": [
+                        1,
+                        2,
+                        3
+                    ]
+                },
+                {
+                    "question": "which is your fav color?",
+                    "answears": [
+                        "red",
+                        "green",
+                        "blud"
+                    ]
+                }
+            ]
+        }
     ]
-  ]
 }
